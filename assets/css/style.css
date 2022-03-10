@@ -1,0 +1,268 @@
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Raleway:400,200,100,300,500,600,700,800,900");
+
+
+*{
+    box-sizing: border-box;
+    font-family: Open Sans, Arial, sans-serif ;
+	font-family: Raleway, Arial, sans-serif ;
+}
+
+body{
+	font-family: Helvetica, Arial, sans-serif, 'Raleway'; 
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    width: 80%;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+button{
+    padding:10px 40px;
+    color:#FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3d9f96;
+    border:none;
+    border-radius:40px;
+    margin:30px 0;
+}
+
+#header{
+    background:url('./../img/header_bg.jpg');
+    color:#FFFFFF;
+}
+
+header{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding:0 20px;
+}
+
+header div a{
+    color:#3d9f96;
+}
+
+.header-down{
+    text-align: center;
+}
+
+.header-down .title{
+    font-size: 25px;
+}
+
+.header-down .subtitle{
+    font-size: 18px;
+    color:#3d9f96;
+}
+
+.header-down img{
+    width: 650px;
+    margin-bottom: -25px;
+}
+
+#media{
+    background: #f7f7f7;
+}
+
+#media .social{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding :30px 20px 20px 20px;
+}
+
+#media .title{
+    font-size: 18px;
+    color:#3d9f96;
+    font-weight: bold;
+    text-align: center;
+}
+
+#newapp .desc{
+    text-align: center;
+    margin: auto;
+    padding:50px 0;
+    width: 60%;
+}
+
+#newapp{
+    margin-bottom: 50px;
+}
+
+#newapp .desc .title{
+    font-size: 30px;
+    color:#27242b;
+}
+
+#newapp .awesome{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url('./../img/map_bg.png');
+    margin-bottom: 50px;
+    width: 80%;
+    text-align: center;
+    margin:auto;
+    padding:50px 0;
+}
+
+.avatar{
+    color:#FFFFFF;
+    background-color: #27242b;
+    text-align: center;
+    padding:50px;
+}
+
+.avatar .name{
+    color:#3d9f96;
+    margin: 25px;
+}
+
+.screenshots .title{
+    font-size: 30px;
+    padding: 50px;
+
+}
+
+.screenshots{
+    background: #f7f7f7;
+}
+
+.screenshots .screen{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#last{
+    max-width:75%;
+    margin:5% auto;
+}
+
+#last .first-col{
+    float:left;
+    width: 50%;
+    padding:25px;
+}
+
+#last .second-col{
+    float:right;
+    width: 50%;
+    padding:25px;
+}
+
+#last .separator{
+    clear:both;
+}
+
+footer{
+    background:#f7f7f7;
+    padding: 40px 0;
+}
+
+footer .first-col{
+    float:left;
+    width: 33%;
+    text-align: center;
+}
+
+footer .second-col{
+    float:left;
+    width: 33%;
+    text-align: center;
+}
+
+footer .third-col{
+    float:right;
+    width: 33%;
+    text-align: center;
+}
+
+.footer-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-down ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-down li{
+    padding:0 20px;
+}
+
+@media (max-width:800px) {
+    header li, header div a, #media subtitle p{
+        display:none;
+    }
+
+    #header img{
+        text-align: center;
+        font-size: 200px;
+    }
+
+    #header .title, #newapp .title{
+        font-size:  20px;
+    }
+
+    .header-down .subtitle, .header-down about{
+        font-size: 12px;
+    }
+
+    .header-down img{
+        width: 250px;
+    }
+
+    #newapp .awesome{
+        width: 100%;
+        display: block;
+    }
+
+    .screenshots .screen{
+        display: block;
+        text-align: center;
+    }
+    
+    .screenshots .title{
+        text-align: center;
+    }
+
+    #last .first-col, #last .second-col, footer .first-col, footer .second-col, footer .third-col{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
